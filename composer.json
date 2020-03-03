@@ -1,0 +1,33 @@
+{
+    "name": "wuwx/hikvision",
+    "type": "library",
+    "require": {
+        "pimple/pimple": "^3.2",
+        "kitetail/zttp": "^0.6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuwx",
+            "email": "wuweixin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wuwx\\Hikvision\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wuwx\\Hikvision\\Tests\\": "tests/"
+        }
+    },
+    "description": "",
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
