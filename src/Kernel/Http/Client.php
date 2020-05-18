@@ -18,7 +18,7 @@ class Client
 
     public function post($url, $params = [])
     {
-        $response = Zttp::withHeaders([
+        $response = Zttp::withoutVerifying()->withHeaders([
             "Accept" => $this->accept,
             "Content-Type" => $this->contentType,
             "X-Ca-Key" => $this->app['config']['app_key'],
